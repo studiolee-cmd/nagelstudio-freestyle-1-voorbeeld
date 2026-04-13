@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — NailArt Studio Amsterdam</title>
+  <meta name="description" content="Nageltrends, verzorgingstips en inspiratie van NailArt Studio Amsterdam.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="/" class="nav-logo">NailArt Studio</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">Over ons</a></li>
+        <li><a href="index.html#services">Behandelingen</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="index.html#reviews">Reviews</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <a href="index.html#contact" class="nav-cta">Afspraak maken</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="blog-hero">
+    <div class="container">
+      <h1>Onze <span>Blog</span></h1>
+      <p>Nagelverzorging, trends en creatieve inspiratie.</p>
+    </div>
+  </section>
+
+  <section class="blog-listing">
+    <div class="container">
+      <div class="blog-grid">
+        <div class="blog-featured blog-card reveal">
+          <img src="images/hero.jpg" alt="Nageltrends 2026">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Uitgelicht</span>
+            <h3>Nageltrends 2026: de complete guide</h3>
+            <p>Van glazed donut nails tot 3D nail art — ontdek alle trends die dit jaar domineren in de nagelwereld en hoe u ze kunt dragen.</p>
+            <a href="#" class="read-more">Lees meer &rarr;</a>
+          </div>
+        </div>
+        <div class="blog-card reveal"><img src="images/craft.jpg" alt="Verzorging"><div class="blog-card-body"><span class="blog-card-tag">Verzorging</span><h3>5 tips voor sterke, gezonde nagels</h3><p>Simpele gewoontes die het verschil maken.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+        <div class="blog-card reveal"><img src="images/kitchen.jpg" alt="Gellak"><div class="blog-card-body"><span class="blog-card-tag">Gellak</span><h3>Gellak vs. reguliere lak: wat is beter?</h3><p>De voor- en nadelen op een rij.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+        <div class="blog-card reveal"><img src="images/carousel.jpg" alt="Chrome"><div class="blog-card-body"><span class="blog-card-tag">Nail art</span><h3>Chrome nagels: zo onderhoud je ze</h3><p>Tips voor langdurige glans en bescherming.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+        <div class="blog-card reveal"><img src="images/detail.jpg" alt="Acryl"><div class="blog-card-body"><span class="blog-card-tag">Acryl</span><h3>Acrylnagels: alles wat je moet weten</h3><p>Van applicatie tot onderhoud — de complete gids.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+        <div class="blog-card reveal"><img src="images/project1.jpg" alt="Seizoenen"><div class="blog-card-body"><span class="blog-card-tag">Seizoenen</span><h3>Zomernagels: de mooiste kleuren</h3><p>Frisse tinten die perfect passen bij het seizoen.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+        <div class="blog-card reveal"><img src="images/project2.jpg" alt="Bruiloft"><div class="blog-card-body"><span class="blog-card-tag">Bruiloft</span><h3>Bruiloftsnagels: elegant en tijdloos</h3><p>De mooiste designs voor uw grote dag.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="cta-content">
+      <h2>Klaar voor <span>perfecte</span> nagels?</h2>
+      <p>Boek direct uw afspraak bij NailArt Studio.</p>
+      <a href="index.html#contact" class="btn-primary">Maak een afspraak</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="/" class="nav-logo">NailArt Studio</a><p>Premium nagelstudio in Amsterdam.</p></div>
+        <div><h4>Behandelingen</h4><ul><li><a href="index.html#services">Gellak</a></li><li><a href="index.html#services">Acrylnagels</a></li></ul></div>
+        <div><h4>Studio</h4><ul><li><a href="index.html#about">Over ons</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li><a href="mailto:info@nailartstudio.nl">info@nailartstudio.nl</a></li><li><a href="tel:+31201234567">020-1234567</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 NailArt Studio. Alle rechten voorbehouden.</p></div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    lucide.createIcons();
+    window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
+    document.getElementById('hamburger').addEventListener('click', () => { document.getElementById('navLinks').classList.toggle('open'); });
+    gsap.registerPlugin(ScrollTrigger);
+    document.querySelectorAll('.reveal').forEach(el => {
+      gsap.fromTo(el, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: .8, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 85%', once: true } });
+    });
+  </script>
+</body>
+</html>

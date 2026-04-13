@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NailArt Studio — Nagelstudio Amsterdam</title>
+  <meta name="description" content="NailArt Studio is uw premium nagelstudio in Amsterdam. Gellak, acrylnagels, nail art en meer met oog voor detail en stijl.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="/" class="nav-logo">NailArt Studio</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Over ons</a></li>
+        <li><a href="#services">Behandelingen</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Afspraak maken</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Top nagelstudio's in Amsterdam</span>
+      <h1>Nagels als <span>kunstwerk</span></h1>
+      <p>Premium nagelbehandelingen in een luxe sfeer. Van subtiel gellak tot statement nail art — wij creeren wat u droomt.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">Maak een afspraak</a>
+        <a href="#portfolio" class="btn-outline">Bekijk ons werk</a>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span>Scroll</span><div class="line"></div></div>
+  </section>
+  <div class="ticker" style="background:var(--color-accent,#f5a623);padding:12px 0;overflow:hidden;">
+    <div style="display:flex;gap:48px;animation:tickerScroll 20s linear infinite;white-space:nowrap;">
+      <span><iconify-icon icon="lucide:palette"></iconify-icon> Gellak</span><span><iconify-icon icon="lucide:sparkles"></iconify-icon> Acryl</span><span><iconify-icon icon="lucide:hand"></iconify-icon> Manicure</span><span><iconify-icon icon="lucide:heart"></iconify-icon> Pedicure</span><span><iconify-icon icon="lucide:brush"></iconify-icon> Nail art</span><span><iconify-icon icon="lucide:scissors"></iconify-icon> Verwijdering</span><span><iconify-icon icon="lucide:palette"></iconify-icon> Gellak</span><span><iconify-icon icon="lucide:sparkles"></iconify-icon> Acryl</span><span><iconify-icon icon="lucide:hand"></iconify-icon> Manicure</span><span><iconify-icon icon="lucide:heart"></iconify-icon> Pedicure</span><span><iconify-icon icon="lucide:brush"></iconify-icon> Nail art</span><span><iconify-icon icon="lucide:scissors"></iconify-icon> Verwijdering</span>
+    </div>
+  </div>
+  <style>@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}</style>
+  <style>.ticker span{display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;font-weight:700;color:var(--color-bg,#0a0a0f);text-transform:uppercase;letter-spacing:0.05em;}</style>
+
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal"><img src="images/about.jpg" alt="NailArt Studio Amsterdam"></div>
+        <div class="about-content reveal">
+          <p class="about-tag">Over NailArt Studio</p>
+          <h2>Passie voor <span>perfecte</span> nagels</h2>
+          <p>In ons atelier in het hart van Amsterdam combineren we vakmanschap met creativiteit. Elke nagelbehandeling is een persoonlijke ervaring.</p>
+          <p>We gebruiken uitsluitend premium producten die lang meegaan en uw nagels gezond houden. Kwaliteit staat bij ons altijd voorop.</p>
+          <div class="about-stats">
+            <div class="stat-item"><div class="stat-number">3000+</div><div class="stat-label">Behandelingen</div></div>
+            <div class="stat-item"><div class="stat-number">8</div><div class="stat-label">Jaar ervaring</div></div>
+            <div class="stat-item"><div class="stat-number">4.9</div><div class="stat-label">Google score</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- ======================== BEFORE / AFTER ======================== -->
+  <section class="ba-section" style="height:100vh;position:relative;overflow:hidden;background:#000;">
+    <div style="width:100%;height:100%;position:relative;">
+      <img src="images/craft.jpg" alt="Na" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">
+      <img src="images/hero.jpg" alt="Voor" id="baBefore" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;">
+      <div id="baLabel" style="position:absolute;z-index:3;bottom:10%;left:50%;transform:translateX(-50%);text-align:center;opacity:0;">
+        <span style="display:inline-block;background:var(--color-accent,#C1FF72);color:#0a0a0a;padding:8px 20px;border-radius:99px;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">Scroll om te zien</span>
+        <h2 style="font-size:clamp(2rem,5vw,3.5rem);font-weight:900;line-height:1.15;color:#fff;text-shadow:0 4px 20px rgba(0,0,0,0.6);">Van oud naar <em style="color:var(--color-accent,#C1FF72);">nieuw</em></h2>
+      </div>
+    </div>
+  </section>
+<section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Behandelingen</p>
+        <h2>Onze <span>specialiteiten</span></h2>
+        <p>Van klassiek tot creatief — voor elke stijl de perfecte behandeling.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal"><div class="service-icon"><i data-lucide="palette"></i></div><h3>Gellak</h3><p>Langhoudende gellak in honderden kleuren. Tot 3 weken glans zonder chippen.</p></div>
+        <div class="service-card reveal"><div class="service-icon"><i data-lucide="sparkles"></i></div><h3>Acrylnagels</h3><p>Verstevigde, prachtig gevormde acrylnagels op maat gemaakt.</p></div>
+        <div class="service-card reveal"><div class="service-icon"><i data-lucide="hand"></i></div><h3>Manicure</h3><p>Luxe manicure met verzorging, vijlen en een perfecte afwerking.</p></div>
+        <div class="service-card reveal"><div class="service-icon"><i data-lucide="heart"></i></div><h3>Pedicure</h3><p>Ontspannende pedicure behandeling voor verzorgde en gezonde voeten.</p></div>
+        <div class="service-card reveal"><div class="service-icon"><i data-lucide="brush"></i></div><h3>Nail art</h3><p>Unieke designs van hand-painted art tot chrome en ombre effecten.</p></div>
+        <div class="service-card reveal"><div class="service-icon"><i data-lucide="scissors"></i></div><h3>Verwijdering</h3><p>Veilige, schadevrije verwijdering van gellak en acryl met nagelverzorging.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal"><p class="section-tag">Portfolio</p><h2>Ons <span>werk</span></h2><p>Een selectie van onze favoriete nagel-creaties.</p></div>
+      <div class="carousel-wrapper reveal">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide"><img src="images/carousel.jpg" alt="Nail art design"><div class="carousel-overlay"><h3>Chrome Dreams</h3><p>Chrome finish met abstracte nail art</p></div></div>
+          <div class="carousel-slide"><img src="images/project1.jpg" alt="Gellak nagels"><div class="carousel-overlay"><h3>Rose Gold Set</h3><p>Gellak in rose gold met glitter accent</p></div></div>
+          <div class="carousel-slide"><img src="images/project2.jpg" alt="Acryl nagels"><div class="carousel-overlay"><h3>Midnight Marble</h3><p>Acryl met marble effect in donkere tinten</p></div></div>
+        </div>
+      </div>
+      <div class="carousel-nav" id="carouselNav">
+        <button class="carousel-dot active" data-index="0"></button>
+        <button class="carousel-dot" data-index="1"></button>
+        <button class="carousel-dot" data-index="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="detail-strip">
+    <div class="container">
+      <div class="detail-grid">
+        <div class="detail-content reveal">
+          <h2>Waarom kiezen voor <span>NailArt Studio</span>?</h2>
+          <p>Wij gaan verder dan een standaard behandeling. Bij ons krijgt u een ervaring.</p>
+          <ul class="detail-list">
+            <li><i data-lucide="check" style="width:18px;height:18px"></i> 100% hygieneprotocol</li>
+            <li><i data-lucide="check" style="width:18px;height:18px"></i> Premium producten (CND, OPI, Presto)</li>
+            <li><i data-lucide="check" style="width:18px;height:18px"></i> Gratis nageladvies bij eerste bezoek</li>
+            <li><i data-lucide="check" style="width:18px;height:18px"></i> Online boeken, geen wachttijden</li>
+          </ul>
+        </div>
+        <div class="detail-image reveal"><img src="images/detail.jpg" alt="Nagelstudio detail"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-header reveal"><p class="section-tag">Reviews</p><h2>Wat onze <span>klanten</span> zeggen</h2></div>
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="review-stars"><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i></div>
+          <p>"Mijn nagels zijn nog nooit zo mooi geweest. Het chrome effect is waanzinnig!"</p>
+          <div class="review-author">Lotte M.</div><div class="review-role">Gellak + Nail art</div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars"><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i></div>
+          <p>"Heerlijk ontspannen sfeer en het resultaat is altijd perfect. Ik kom hier al 3 jaar."</p>
+          <div class="review-author">Sanne K.</div><div class="review-role">Vaste klant — Manicure</div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars"><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i></div>
+          <p>"De acrylnagels hielden meer dan 4 weken. Beste studio in Amsterdam!"</p>
+          <div class="review-author">Priya D.</div><div class="review-role">Acrylnagels</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team">
+    <div class="container">
+      <div class="team-grid">
+        <div class="team-image reveal"><img src="images/team.jpg" alt="Team NailArt Studio"></div>
+        <div class="team-content reveal">
+          <h2>Ontmoet ons <span>team</span></h2>
+          <p>Ons team van gecertificeerde nail artists combineert jarenlange ervaring met een passie voor creativiteit. We volgen continu trainingen om op de hoogte te blijven van de nieuwste trends.</p>
+          <p>Bij NailArt Studio staat persoonlijke aandacht centraal. Elk bezoek is een moment voor uzelf.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog">
+    <div class="container">
+      <div class="section-header reveal"><p class="section-tag">Blog</p><h2>Tips & <span>trends</span></h2></div>
+      <div class="blog-grid">
+        <div class="blog-card reveal"><img src="images/craft.jpg" alt="Nagelverzorging"><div class="blog-card-body"><span class="blog-card-tag">Verzorging</span><h3>5 tips voor sterke, gezonde nagels</h3><p>Zo houdt u uw nagels in topconditie tussen behandelingen door.</p><a href="blog.html" class="read-more">Lees meer &rarr;</a></div></div>
+        <div class="blog-card reveal"><img src="images/kitchen.jpg" alt="Trends"><div class="blog-card-body"><span class="blog-card-tag">Trends</span><h3>Nageltrends 2026: dit zijn de kleuren</h3><p>Van butter yellow tot deep cherry — de kleuren van het seizoen.</p><a href="blog.html" class="read-more">Lees meer &rarr;</a></div></div>
+        <div class="blog-card reveal"><img src="images/carousel.jpg" alt="Nail art"><div class="blog-card-body"><span class="blog-card-tag">Nail art</span><h3>Chrome nagels: zo onderhoud je ze</h3><p>Tips om uw chrome finish langer mooi te houden.</p><a href="blog.html" class="read-more">Lees meer &rarr;</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="cta-content">
+      <h2>Klaar voor <span>perfecte</span> nagels?</h2>
+      <p>Boek direct uw afspraak en ontdek waarom Amsterdam kiest voor NailArt Studio.</p>
+      <a href="#contact" class="btn-primary">Maak een afspraak</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="/" class="nav-logo">NailArt Studio</a><p>Premium nagelstudio in het hart van Amsterdam.</p></div>
+        <div><h4>Behandelingen</h4><ul><li><a href="#services">Gellak</a></li><li><a href="#services">Acrylnagels</a></li><li><a href="#services">Nail art</a></li></ul></div>
+        <div><h4>Studio</h4><ul><li><a href="#about">Over ons</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li><a href="mailto:info@nailartstudio.nl">info@nailartstudio.nl</a></li><li><a href="tel:+31201234567">020-1234567</a></li><li><a href="#">Amsterdam Centrum</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 NailArt Studio. Alle rechten voorbehouden.</p></div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    lucide.createIcons();
+    window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
+    document.getElementById('hamburger').addEventListener('click', () => { document.getElementById('navLinks').classList.toggle('open'); });
+    gsap.registerPlugin(ScrollTrigger);
+    document.querySelectorAll('.reveal').forEach(el => {
+      gsap.fromTo(el, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: .8, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 85%', once: true } });
+    });
+    const track = document.getElementById('carouselTrack');
+    const dots = document.querySelectorAll('.carousel-dot');
+    let current = 0;
+    function goToSlide(i) { current = i; track.style.transform = `translateX(-${i * 100}%)`; dots.forEach((d, idx) => d.classList.toggle('active', idx === i)); }
+    dots.forEach(d => d.addEventListener('click', () => goToSlide(+d.dataset.index)));
+    setInterval(() => goToSlide((current + 1) % 3), 5000);
+  </script>
+
+    // Before/After slider
+    (function() {
+      var before = document.getElementById('baBefore');
+      var label = document.getElementById('baLabel');
+      if (!before || typeof gsap === 'undefined') return;
+      gsap.registerPlugin(ScrollTrigger);
+      var tl = gsap.timeline({
+        scrollTrigger: { trigger: '.ba-section', start: 'top top', end: '+=200%', pin: true, scrub: 0.5, anticipatePin: 1 }
+      });
+      tl.fromTo(before, { clipPath: 'inset(0 0 0 0)' }, { clipPath: 'inset(0 100% 0 0)', duration: 1, ease: 'none' });
+      tl.fromTo(label, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' }, 0.5);
+    })();
+
+</body>
+</html>
